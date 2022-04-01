@@ -1,8 +1,4 @@
-from calendar import c
 import sqlite3
-from unittest import result
-
-from numpy import insert
 
 con = sqlite3.connect('mycompany.db')
 cObj = con.cursor()
@@ -27,7 +23,7 @@ def delete_all():
     cObj.execute("DELETE FROM employees")
     con.commit()
 
-#insert_value(1, "Shubham", 80000, "Python", "Developer")
+insert_value(1, "Shubham", 80000, "Python", "Developer")
 #delete_all()
 
 cObj.close()
